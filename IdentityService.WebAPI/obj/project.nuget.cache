@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "sZxkaUPld4uoxcmmCuQ7g3ejfxq6hrXqL8y/cQUVgCb3U5fnSmx8siuBR/vpOin7Ip2P/VzAab0yBaAjreVyrw==",
+  "success": true,
+  "projectFilePath": "/Users/shiyangyang/Desktop/backend/Noodles.LnEn/IdentityService.WebAPI/IdentityService.WebAPI.csproj",
+  "expectedPackageFiles": [
+    "/Users/shiyangyang/.nuget/packages/microsoft.aspnetcore.openapi/7.0.11/microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IndetityServices", "IndetityServices", "{70A81320-9ED1-448C-A78C-F859511B3AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.WebAPI", "IdentityService.WebAPI\IdentityService.WebAPI.csproj", "{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Infrastructure", "IdentityService.Infrastructure\IdentityService.Infrastructure.csproj", "{67F800B8-A781-442E-A7EC-50CF290D8226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Domain", "IdentityService.Domain\IdentityService.Domain.csproj", "{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F800B8-A781-442E-A7EC-50CF290D8226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67F800B8-A781-442E-A7EC-50CF290D8226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F800B8-A781-442E-A7EC-50CF290D8226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67F800B8-A781-442E-A7EC-50CF290D8226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD} = {70A81320-9ED1-448C-A78C-F859511B3AF8}
+		{67F800B8-A781-442E-A7EC-50CF290D8226} = {70A81320-9ED1-448C-A78C-F859511B3AF8}
+		{36EEF7FB-C1FB-4E24-A964-733B615A2DA8} = {70A81320-9ED1-448C-A78C-F859511B3AF8}
+	EndGlobalSection
+EndGlobal
