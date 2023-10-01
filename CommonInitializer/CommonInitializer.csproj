@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+      <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+      <PackageReference Include="Zack.AnyDBConfigProvider" Version="1.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Noodles.ASPNETCore\Noodles.ASPNETCore.csproj" />
+      <ProjectReference Include="..\Noodles.Common\Noodles.Common.csproj" />
+      <ProjectReference Include="..\Noodles.EventBus\Noodles.EventBus.csproj" />
+      <ProjectReference Include="..\Noodles.Infrastructure\Noodles.Infrastructure.csproj" />
+      <ProjectReference Include="..\Noodles.Jwt\Noodles.Jwt.csproj" />
+    </ItemGroup>
+
+</Project>

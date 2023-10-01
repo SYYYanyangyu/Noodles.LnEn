@@ -1,0 +1,12 @@
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/bin/Debug/net7.0/Noodles.EventBus.deps.json
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/bin/Debug/net7.0/Noodles.EventBus.dll
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/bin/Debug/net7.0/Noodles.EventBus.pdb
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.csproj.AssemblyReference.cache
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.GeneratedMSBuildEditorConfig.editorconfig
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.AssemblyInfoInputs.cache
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.AssemblyInfo.cs
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.csproj.CoreCompileInputs.cache
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.dll
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/refint/Noodles.EventBus.dll
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/Noodles.EventBus.pdb
+/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.EventBus/obj/Debug/net7.0/ref/Noodles.EventBus.dll

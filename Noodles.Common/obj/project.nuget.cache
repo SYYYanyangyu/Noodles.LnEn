@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "rYSfFkvkqLz2MbCko1p5hReG/cezokcxOPnTFYyuupT1/A+HNLANa3Dc/4lASeWLoYUOfhpaOvfgISLWSOg8ZA==",
+  "success": true,
+  "projectFilePath": "/Users/shiyangyang/Desktop/backend/Noodles.LnEn/Noodles.Common/Noodles.Common.csproj",
+  "expectedPackageFiles": [
+    "/Users/shiyangyang/.nuget/packages/asmresolver/5.4.0/asmresolver.5.4.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/asmresolver.dotnet/5.4.0/asmresolver.dotnet.5.4.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/asmresolver.pe/5.4.0/asmresolver.pe.5.4.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/asmresolver.pe.file/5.4.0/asmresolver.pe.file.5.4.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/fluentvalidation/11.7.1/fluentvalidation.11.7.1.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0-rc.2.22472.3/microsoft.extensions.dependencyinjection.abstractions.7.0.0-rc.2.22472.3.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.1/microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/system.text.encodings.web/6.0.0/system.text.encodings.web.6.0.0.nupkg.sha512",
+    "/Users/shiyangyang/.nuget/packages/system.text.json/6.0.8/system.text.json.6.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
