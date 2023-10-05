@@ -3,6 +3,7 @@ using System.Net;
 using System.Security.Claims;
 using IdentityService.Domain;
 using IdentityService.Domain.Entities;
+using IdentityService.WebAPI.Controllers.Login.ViewModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -45,7 +46,7 @@ public class LoginController : ControllerBase
 
     [HttpGet]
     [Authorize]
-    public async Task<ActionResult<UserResponse>> GetUserInfo()
+    public async Task<ActionResult<LoginVM>> GetUserInfo()
     {
         string userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
         var user = await repository.FindByIdAsync(Guid.Parse(userId));
@@ -53,9 +54,16 @@ public class LoginController : ControllerBase
         {
             return NotFound();
         }
+        var result = new UserResponse(user.Id, user.PhoneNumber, user.CreationTime,user.UserName);
         //出于安全考虑，不要机密信息传递到客户端
         //除非确认没问题，否则尽量不要直接把实体类对象返回给前端
-        return new UserResponse(user.Id, user.PhoneNumber, user.CreationTime);
+        return new LoginVM()
+        {
+            Code = (int)HttpStatusCode.OK,
+            Data = result!,
+            Message = "获取token成功",
+            Ok = true
+        }; 
     }
     
     
@@ -85,11 +93,20 @@ public class LoginController : ControllerBase
 
     [AllowAnonymous]
     [HttpPost]
-    public async Task<ActionResult<string>> LoginByUserNameAndPwd(
+    public async Task<ActionResult<LoginVM>> LoginByUserNameAndPwd(
         LoginByUserNameAndPwdRequest req)
     {
         (var checkResult, var token) = await idService.LoginByUserNameAndPwdAsync(req.UserName, req.Password);
-        if (checkResult.Succeeded) return token!;
+        if (checkResult.Succeeded)
+        {
+            return new LoginVM()
+            {
+                Code = (int)HttpStatusCode.OK,
+                Data = token!,
+                Message = "获取token成功",
+                Ok = true
+            };
+        }
         else if (checkResult.IsLockedOut)//尝试登录次数太多
             return StatusCode((int)HttpStatusCode.Locked, "用户已经被锁定");
         else

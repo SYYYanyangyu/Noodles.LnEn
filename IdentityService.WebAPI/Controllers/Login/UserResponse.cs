@@ -1,3 +1,3 @@
 ﻿
 namespace IdentityService.WebAPI.Controllers.Login;
-public record UserResponse(Guid Id, string PhoneNumber, DateTime CreationTime);
+public record UserResponse(Guid Id, string PhoneNumber, DateTime CreationTime,string UserName);

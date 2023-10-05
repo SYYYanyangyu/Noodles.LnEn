@@ -103,7 +103,7 @@ namespace CommonInitializer
 
             //Redis的配置
             string redisConnStr = configuration.GetValue<string>("Redis:ConnStr");
-            IConnectionMultiplexer redisConnMultiplexer = ConnectionMultiplexer.Connect(redisConnStr);
+            IConnectionMultiplexer redisConnMultiplexer = ConnectionMultiplexer.Connect("124.221.228.31,password=redis1234");
             services.AddSingleton(typeof(IConnectionMultiplexer), redisConnMultiplexer);
             services.Configure<ForwardedHeadersOptions>(options =>
             {

@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IndetityServices", "IndetityServices", "{70A81320-9ED1-448C-A78C-F859511B3AF8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServices", "IdentityServices", "{70A81320-9ED1-448C-A78C-F859511B3AF8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.WebAPI", "IdentityService.WebAPI\IdentityService.WebAPI.csproj", "{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}"
 EndProject
