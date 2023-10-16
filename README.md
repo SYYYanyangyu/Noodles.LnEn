@@ -23,10 +23,10 @@ A web about learning English.
 
 **Purpose:**
 
--i. Language is information, and information is everything.
--ii. Interest
--iii. Likes coding and sharing
--iv. ...
+i. Language is information, and information is everything.
+ii. Interest
+iii. Likes coding and sharing
+iv. ...
 
 **Project Function:**
 
