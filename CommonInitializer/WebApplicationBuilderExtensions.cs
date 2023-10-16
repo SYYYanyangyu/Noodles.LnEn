@@ -24,11 +24,13 @@ namespace CommonInitializer
 {
     public static class WebApplicationBuilderExtensions
     {
+        
         public static void ConfigureDbConfiguration(this WebApplicationBuilder builder)
         {
             builder.Host.ConfigureAppConfiguration((hostCtx, configBuilder) =>
             {
-                string connStr = "Server=192.168.31.134,1433;user id=sa;password=sa@sa1234;TrustServerCertificate=True;MultiSubnetFailover=True;MultipleActiveResultSets=true;Database=YouzackVNextDB;";
+                IConfiguration configuration = builder.Configuration;
+                string connStr = configuration.GetSection("ConnectionString").Value;
                 configBuilder.AddDbConfiguration(() => new SqlConnection(connStr), reloadOnChange: true, reloadInterval: TimeSpan.FromSeconds(5));
             });
         }
@@ -44,7 +46,8 @@ namespace CommonInitializer
                 //连接字符串如果放到appsettings.json中，会有泄密的风险
                 //如果放到UserSecrets中，每个项目都要配置，很麻烦
                 //因此这里推荐放到环境变量中。
-                string connStr = "Server=192.168.31.134,1433;user id=sa;password=sa@sa1234;TrustServerCertificate=True;MultiSubnetFailover=True;MultipleActiveResultSets=true;Database=YouzackVNextDB;";
+                IConfiguration configuration = builder.Configuration;
+                string connStr = configuration.GetSection("ConnectionString").Value;
                 ctx.UseSqlServer(connStr);
             }, assemblies);
 
