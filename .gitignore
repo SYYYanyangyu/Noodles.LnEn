@@ -1,2 +1,7 @@
 /Noodles.LnEn.sln.DotSettings.user
 /.vs
+/.CommonInitializer/obj
+/.CommonInitializer/bin
+/.IdentityService.WebAPI/bin
+/.IdentityService.WebAPI/obj
+
