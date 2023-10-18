@@ -30,6 +30,6 @@ A web about learning English.
 
 **Project Function:**
 
-Admin manages file uploads, such as regularly updating listening files. The UI is user-oriented, providing a simple and user-friendly web interface for users to dedicate more energy to learning English.
-This repo is based on .https://github.com/yangzhongke/NETBookMaterials
+  - Admin manages file uploads, such as regularly updating listening files. The UI is user-oriented, providing a simple and user-friendly web interface for users to dedicate more energy to learning English.
+  - This repo is based on .https://github.com/yangzhongke/NETBookMaterials
 
