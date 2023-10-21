@@ -1,6 +1,4 @@
-﻿using System.Data.SqlClient;
-using System.Reflection;
-using FluentValidation.AspNetCore;
+﻿using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -9,16 +7,15 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Serilog;
-using StackExchange.Redis;
-using Swashbuckle.AspNetCore.SwaggerGen;
 using Noodles.ASPNETCore;
 using Noodles.Common;
 using Noodles.Common.JsonConverters;
 using Noodles.EventBus;
 using Noodles.Infrastructure.EFCore;
 using Noodles.Jwt;
-using Noodles.EventBus;
+using Serilog;
+using StackExchange.Redis;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace CommonInitializer
 {

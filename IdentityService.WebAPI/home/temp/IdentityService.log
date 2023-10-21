@@ -2116,3 +2116,37 @@ WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
 2023-10-05 20:26:18.312 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 48.1622ms
 2023-10-05 20:26:18.312 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
 2023-10-05 20:26:18.312 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 51.2441ms
+2023-10-16 22:50:41.677 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-16 22:50:41.808 +08:00 [INF] Now listening on: https://localhost:7294
+2023-10-16 22:50:41.808 +08:00 [INF] Now listening on: http://localhost:5008
+2023-10-16 22:50:41.809 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 22:50:41.809 +08:00 [INF] Hosting environment: Development
+2023-10-16 22:50:41.809 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/IdentityService.WebAPI
+2023-10-16 22:50:43.005 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger - -
+2023-10-16 22:50:43.022 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger - - - 301 0 - 17.1202ms
+2023-10-16 22:50:43.024 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/index.html - -
+2023-10-16 22:50:43.051 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 27.6432ms
+2023-10-16 22:50:43.057 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui.css - -
+2023-10-16 22:50:43.058 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2023-10-16 22:50:43.064 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-16 22:50:43.065 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 144929 text/css 7.4973ms
+2023-10-16 22:50:43.070 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2023-10-16 22:50:43.071 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-16 22:50:43.071 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-16 22:50:43.071 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 1.5374ms
+2023-10-16 22:50:43.072 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 13.8450ms
+2023-10-16 22:50:43.149 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-10-16 22:50:43.156 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2023-10-16 22:50:43.156 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-16 22:50:43.156 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 0.3290ms
+2023-10-16 22:50:43.181 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 32.0157ms
+2023-10-16 22:58:40.458 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-10-16 22:58:40.609 +08:00 [INF] Now listening on: https://localhost:7294
+2023-10-16 22:58:40.610 +08:00 [INF] Now listening on: http://localhost:5008
+2023-10-16 22:58:40.612 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 22:58:40.612 +08:00 [INF] Hosting environment: Development
+2023-10-16 22:58:40.613 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/IdentityService.WebAPI
+2023-10-16 22:58:41.914 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/index.html - -
+2023-10-16 22:58:41.975 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 63.0697ms
+2023-10-16 22:58:42.093 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-10-16 22:58:42.130 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 36.7550ms
