@@ -23,11 +23,13 @@ A web about learning English.
 
 **Purpose:**
 
-i. Language is information, and information is everything.
-ii. Interest
-iii. Likes coding and sharing
-iv. ...
+  - i. Language is information, and information is everything.
+  - ii. Interest
+  - iii. Likes coding and sharing
+  - iv. ...
 
 **Project Function:**
 
-Admin manages file uploads, such as regularly updating listening files. The UI is user-oriented, providing a simple and user-friendly web interface for users to dedicate more energy to learning English.
+  - Admin manages file uploads, such as regularly updating listening files. The UI is user-oriented, providing a simple and user-friendly web interface for users to dedicate more energy to learning English.
+  - This repo is based on .https://github.com/yangzhongke/NETBookMaterials
+

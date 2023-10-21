@@ -1,14 +1,15 @@
 ﻿using MediatR;
-using Noodles.DomainCommons.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Noodles.DomainCommons.Models
 {
-    public record BaseEntity : IEntity, IDomainEvents
+    public record BaseEntity: IEntity, IDomainEvents
     {
-
         [NotMapped]
         private List<INotification> domainEvents = new();
 
@@ -26,6 +27,7 @@ namespace Noodles.DomainCommons.Models
                 domainEvents.Add(eventItem);
             }
         }
+
         public void ClearDomainEvents()
         {
             domainEvents.Clear();

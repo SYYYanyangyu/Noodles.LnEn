@@ -1,39 +1,41 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServices", "IdentityServices", "{70A81320-9ED1-448C-A78C-F859511B3AF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.WebAPI", "IdentityService.WebAPI\IdentityService.WebAPI.csproj", "{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.WebAPI", "IdentityService.WebAPI\IdentityService.WebAPI.csproj", "{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Infrastructure", "IdentityService.Infrastructure\IdentityService.Infrastructure.csproj", "{67F800B8-A781-442E-A7EC-50CF290D8226}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.Infrastructure", "IdentityService.Infrastructure\IdentityService.Infrastructure.csproj", "{67F800B8-A781-442E-A7EC-50CF290D8226}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityService.Domain", "IdentityService.Domain\IdentityService.Domain.csproj", "{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityService.Domain", "IdentityService.Domain\IdentityService.Domain.csproj", "{36EEF7FB-C1FB-4E24-A964-733B615A2DA8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{3144EB0D-0BBE-4098-9BE7-9A62688A6CD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.DomainCommons", "Noodles.DomainCommons\Noodles.DomainCommons.csproj", "{C7EBB87C-7A4D-4447-937E-2C1B1DD3DD78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.DomainCommons", "Noodles.DomainCommons\Noodles.DomainCommons.csproj", "{C7EBB87C-7A4D-4447-937E-2C1B1DD3DD78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.Infrastructure", "Noodles.Infrastructure\Noodles.Infrastructure.csproj", "{5D4EEF14-979D-4653-93C6-9CFD6A1956EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.Infrastructure", "Noodles.Infrastructure\Noodles.Infrastructure.csproj", "{5D4EEF14-979D-4653-93C6-9CFD6A1956EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonInitializer", "CommonInitializer\CommonInitializer.csproj", "{14AFC427-2307-4CA6-9D9D-3299E916493C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonInitializer", "CommonInitializer\CommonInitializer.csproj", "{14AFC427-2307-4CA6-9D9D-3299E916493C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.Common", "Noodles.Common\Noodles.Common.csproj", "{4240A26F-4F56-4423-BE56-B4D93DBE456D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.Common", "Noodles.Common\Noodles.Common.csproj", "{4240A26F-4F56-4423-BE56-B4D93DBE456D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.EventBus", "Noodles.EventBus\Noodles.EventBus.csproj", "{0BD4F4F1-CC6A-460B-9FB3-61E7247E5E5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.EventBus", "Noodles.EventBus\Noodles.EventBus.csproj", "{0BD4F4F1-CC6A-460B-9FB3-61E7247E5E5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.Jwt", "Noodles.Jwt\Noodles.Jwt.csproj", "{4D282B6E-DDD4-4040-B8E9-D9AD114324BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.Jwt", "Noodles.Jwt\Noodles.Jwt.csproj", "{4D282B6E-DDD4-4040-B8E9-D9AD114324BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Noodles.ASPNETCore", "Noodles.ASPNETCore\Noodles.ASPNETCore.csproj", "{A494AAFC-6E37-45C8-93DB-95DA1027AB33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Noodles.ASPNETCore", "Noodles.ASPNETCore\Noodles.ASPNETCore.csproj", "{A494AAFC-6E37-45C8-93DB-95DA1027AB33}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileService", "FileService", "{E97DEEE1-3D5C-49A7-90C0-6308F827E755}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileService", "FileService", "{01750763-2A4B-4D26-949D-E79EDEF595C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.WebAPI", "FileService.WebAPI\FileService.WebAPI.csproj", "{4B25AE60-72AA-4459-9978-11175BA06D3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.WebAPI", "FileService.WebAPI\FileService.WebAPI.csproj", "{07F44D40-9ACE-4E26-B239-F72FDFFDD284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.SDK.NETCore", "FileService.SDK.NETCore\FileService.SDK.NETCore.csproj", "{71E04F7D-21E2-4D99-9967-9B7D8C94A760}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Domain", "FileService.Domain\FileService.Domain.csproj", "{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Infrastructure", "FileService.Infrastructure\FileService.Infrastructure.csproj", "{5CEDA8A8-22A4-46D3-BEA6-91F620E39088}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Infrastructure", "FileService.Infrastructure\FileService.Infrastructure.csproj", "{0725AEF6-F535-4E4A-BE96-FC67180DB4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.Domain", "FileService.Domain\FileService.Domain.csproj", "{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileService.SDK.NETCore", "FileService.SDK.NETCore\FileService.SDK.NETCore.csproj", "{CCBCB565-C383-4F88-8E6E-A90CF2C49913}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,22 +83,25 @@ Global
 		{A494AAFC-6E37-45C8-93DB-95DA1027AB33}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A494AAFC-6E37-45C8-93DB-95DA1027AB33}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A494AAFC-6E37-45C8-93DB-95DA1027AB33}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B25AE60-72AA-4459-9978-11175BA06D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B25AE60-72AA-4459-9978-11175BA06D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B25AE60-72AA-4459-9978-11175BA06D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B25AE60-72AA-4459-9978-11175BA06D3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{71E04F7D-21E2-4D99-9967-9B7D8C94A760}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71E04F7D-21E2-4D99-9967-9B7D8C94A760}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71E04F7D-21E2-4D99-9967-9B7D8C94A760}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{71E04F7D-21E2-4D99-9967-9B7D8C94A760}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CEDA8A8-22A4-46D3-BEA6-91F620E39088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CEDA8A8-22A4-46D3-BEA6-91F620E39088}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CEDA8A8-22A4-46D3-BEA6-91F620E39088}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CEDA8A8-22A4-46D3-BEA6-91F620E39088}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F44D40-9ACE-4E26-B239-F72FDFFDD284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F44D40-9ACE-4E26-B239-F72FDFFDD284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F44D40-9ACE-4E26-B239-F72FDFFDD284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F44D40-9ACE-4E26-B239-F72FDFFDD284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0725AEF6-F535-4E4A-BE96-FC67180DB4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0725AEF6-F535-4E4A-BE96-FC67180DB4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0725AEF6-F535-4E4A-BE96-FC67180DB4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0725AEF6-F535-4E4A-BE96-FC67180DB4AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCBCB565-C383-4F88-8E6E-A90CF2C49913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCBCB565-C383-4F88-8E6E-A90CF2C49913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCBCB565-C383-4F88-8E6E-A90CF2C49913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCBCB565-C383-4F88-8E6E-A90CF2C49913}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC0308D8-ED8D-4291-A7C4-7FDFA2DCB1CD} = {70A81320-9ED1-448C-A78C-F859511B3AF8}
@@ -109,9 +114,12 @@ Global
 		{0BD4F4F1-CC6A-460B-9FB3-61E7247E5E5C} = {3144EB0D-0BBE-4098-9BE7-9A62688A6CD6}
 		{4D282B6E-DDD4-4040-B8E9-D9AD114324BE} = {3144EB0D-0BBE-4098-9BE7-9A62688A6CD6}
 		{A494AAFC-6E37-45C8-93DB-95DA1027AB33} = {3144EB0D-0BBE-4098-9BE7-9A62688A6CD6}
-		{4B25AE60-72AA-4459-9978-11175BA06D3D} = {E97DEEE1-3D5C-49A7-90C0-6308F827E755}
-		{71E04F7D-21E2-4D99-9967-9B7D8C94A760} = {E97DEEE1-3D5C-49A7-90C0-6308F827E755}
-		{5CEDA8A8-22A4-46D3-BEA6-91F620E39088} = {E97DEEE1-3D5C-49A7-90C0-6308F827E755}
-		{BC311AC9-F5D1-45C0-BFBB-8D4A331AD9D7} = {E97DEEE1-3D5C-49A7-90C0-6308F827E755}
+		{07F44D40-9ACE-4E26-B239-F72FDFFDD284} = {01750763-2A4B-4D26-949D-E79EDEF595C5}
+		{8EE560BB-3CF6-47AB-B1D1-A5A1C1DE0CAB} = {01750763-2A4B-4D26-949D-E79EDEF595C5}
+		{0725AEF6-F535-4E4A-BE96-FC67180DB4AE} = {01750763-2A4B-4D26-949D-E79EDEF595C5}
+		{CCBCB565-C383-4F88-8E6E-A90CF2C49913} = {01750763-2A4B-4D26-949D-E79EDEF595C5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C22DA93D-D8D7-459F-B427-0DF0D7583EB3}
 	EndGlobalSection
 EndGlobal
