@@ -2150,6 +2150,864 @@ WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
 2023-10-16 22:58:41.975 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 63.0697ms
 2023-10-16 22:58:42.093 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - -
 2023-10-16 22:58:42.130 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 36.7550ms
+2023-10-22 16:20:39.170 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-22 16:20:39.313 +08:00 [INF] Now listening on: http://localhost:5008
+2023-10-22 16:20:39.322 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 16:20:39.327 +08:00 [INF] Hosting environment: Development
+2023-10-22 16:20:39.332 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-10-22 16:20:39.560 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger - -
+2023-10-22 16:20:39.658 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger - - - 301 0 - 100.7849ms
+2023-10-22 16:20:39.662 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-10-22 16:20:39.767 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 104.5275ms
+2023-10-22 16:20:39.785 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - -
+2023-10-22 16:20:39.785 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - -
+2023-10-22 16:20:39.789 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - -
+2023-10-22 16:20:39.867 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-22 16:20:39.867 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-22 16:20:39.867 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-22 16:20:39.875 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 89.9148ms
+2023-10-22 16:20:39.875 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 89.9148ms
+2023-10-22 16:20:39.875 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - - - 200 144929 text/css 85.5715ms
+2023-10-22 16:20:40.069 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-10-22 16:20:40.097 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - -
+2023-10-22 16:20:40.116 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-22 16:20:40.119 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - - - 200 628 image/png 22.1735ms
+2023-10-22 16:20:40.225 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.2174ms
+2023-10-22 16:23:47.302 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40
+2023-10-22 16:23:47.307 +08:00 [INF] CORS policy execution failed.
+2023-10-22 16:23:47.308 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-10-22 16:23:47.363 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-10-22 16:23:47.392 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:23:48.773 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-10-22 16:23:48.985 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-10-22 16:23:49.061 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-10-22 16:23:49.348 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:23:49.359 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 1960.4573ms
+2023-10-22 16:23:49.363 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-10-22 16:23:49.374 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 2071.7110ms
+2023-10-22 16:23:49.387 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:23:49.454 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:23:49.460 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:23:49.517 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:23:49.522 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:23:49.547 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 82.4428ms
+2023-10-22 16:23:49.548 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:23:49.550 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 163.0868ms
+2023-10-22 16:24:00.700 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:24:00.705 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:24:00.707 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:24:00.734 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:24:00.736 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:24:00.737 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 29.3547ms
+2023-10-22 16:24:00.739 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:24:00.740 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 39.9753ms
+2023-10-22 16:24:02.842 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:24:02.844 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:24:02.845 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:24:02.864 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:24:02.866 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:24:02.867 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.7696ms
+2023-10-22 16:24:02.869 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:24:02.870 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.2524ms
+2023-10-22 16:32:02.046 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:32:02.052 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:02.053 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:32:02.069 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:32:02.071 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:32:02.073 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 17.3651ms
+2023-10-22 16:32:02.074 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:02.075 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.9783ms
+2023-10-22 16:32:03.338 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:32:03.340 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:03.341 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:32:03.359 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:32:03.363 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:32:03.365 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 22.7195ms
+2023-10-22 16:32:03.368 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:03.369 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.7751ms
+2023-10-22 16:32:04.473 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:32:04.475 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:04.476 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:32:04.490 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:32:04.492 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:32:04.494 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.7614ms
+2023-10-22 16:32:04.495 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:04.496 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 23.2161ms
+2023-10-22 16:32:06.803 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:32:06.804 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:06.805 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:32:06.821 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:32:06.823 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:32:06.824 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.6519ms
+2023-10-22 16:32:06.826 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:06.827 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 23.9780ms
+2023-10-22 16:32:07.498 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:32:07.502 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:07.504 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:32:07.521 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:32:07.524 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:32:07.525 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.2076ms
+2023-10-22 16:32:07.527 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:32:07.528 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.0669ms
+2023-10-22 16:34:18.407 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:34:18.439 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:34:18.441 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:34:18.468 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:34:18.472 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:34:18.474 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 30.7538ms
+2023-10-22 16:34:18.477 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:34:18.482 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 72.4165ms
+2023-10-22 16:43:00.650 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:43:00.652 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:43:00.656 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:43:00.678 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:43:00.686 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:43:00.688 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 29.8298ms
+2023-10-22 16:43:00.689 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:43:00.690 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 39.8439ms
+2023-10-22 16:43:02.706 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:43:02.709 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:43:02.713 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:43:02.733 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:43:02.736 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:43:02.737 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 22.8066ms
+2023-10-22 16:43:02.739 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:43:02.740 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 33.4395ms
+2023-10-22 16:44:44.613 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:44:44.615 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:44.617 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:44:44.635 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:44:44.638 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:44:44.639 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.3283ms
+2023-10-22 16:44:44.640 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:44.641 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.0217ms
+2023-10-22 16:44:48.466 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:44:48.468 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:48.471 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:44:48.492 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:44:48.494 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:44:48.496 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 22.9612ms
+2023-10-22 16:44:48.497 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:48.498 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 32.3880ms
+2023-10-22 16:44:55.082 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:44:55.085 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:55.086 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:44:55.100 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:44:55.103 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:44:55.104 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.2677ms
+2023-10-22 16:44:55.105 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:44:55.106 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 24.0866ms
+2023-10-22 16:45:46.369 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:45:46.371 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:46.372 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:45:46.393 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:45:46.396 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:45:46.398 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 23.1713ms
+2023-10-22 16:45:46.399 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:46.400 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.9343ms
+2023-10-22 16:45:52.396 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:45:52.397 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:52.400 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:45:52.422 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:45:52.424 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:45:52.426 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 23.7196ms
+2023-10-22 16:45:52.427 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:52.428 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 32.1244ms
+2023-10-22 16:45:54.512 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:45:54.514 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:54.515 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:45:54.531 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:45:54.534 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:45:54.535 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.7835ms
+2023-10-22 16:45:54.537 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:45:54.538 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.0926ms
+2023-10-22 16:46:18.200 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:46:18.202 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:18.203 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:46:18.221 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:46:18.224 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:46:18.225 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.1138ms
+2023-10-22 16:46:18.226 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:18.227 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.9191ms
+2023-10-22 16:46:21.330 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:46:21.331 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:21.333 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:46:21.353 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:46:21.355 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:46:21.356 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.5434ms
+2023-10-22 16:46:21.358 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:21.360 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.2248ms
+2023-10-22 16:46:37.365 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:46:37.367 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:37.368 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:46:37.386 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:46:37.389 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:46:37.390 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.3999ms
+2023-10-22 16:46:37.392 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:37.392 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 27.7763ms
+2023-10-22 16:46:40.172 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:46:40.174 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:40.174 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:46:40.191 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:46:40.193 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:46:40.195 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.2415ms
+2023-10-22 16:46:40.196 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:46:40.198 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.0534ms
+2023-10-22 16:48:09.643 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:48:09.652 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:48:09.653 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:48:09.675 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:48:09.677 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:48:09.679 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 24.394ms
+2023-10-22 16:48:09.680 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:48:09.682 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 38.6543ms
+2023-10-22 16:48:54.563 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:48:54.572 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:48:54.574 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:48:54.593 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:48:54.596 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:48:54.598 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.9264ms
+2023-10-22 16:48:54.599 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:48:54.599 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 36.4165ms
+2023-10-22 16:50:10.709 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:50:10.721 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:50:10.725 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:50:10.744 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:50:10.746 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:50:10.748 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.5388ms
+2023-10-22 16:50:10.749 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:50:10.752 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 43.3216ms
+2023-10-22 16:52:10.149 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:52:10.153 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:52:10.154 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:52:10.236 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:52:10.239 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:52:10.252 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 42.833ms
+2023-10-22 16:52:10.302 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:52:10.309 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 159.6549ms
+2023-10-22 16:56:00.682 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:56:00.729 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:56:00.731 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:56:00.753 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:56:00.756 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:56:00.758 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 24.4452ms
+2023-10-22 16:56:00.759 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:56:00.760 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 78.2287ms
+2023-10-22 16:57:30.695 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 16:57:30.698 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:57:30.699 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 16:57:30.747 +08:00 [INF] Executed DbCommand (23ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 16:57:30.755 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 16:57:30.757 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 55.7079ms
+2023-10-22 16:57:30.758 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 16:57:30.759 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 63.6764ms
+2023-10-22 17:16:14.893 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 17:16:14.961 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 17:16:14.965 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 17:16:15.017 +08:00 [INF] Executed DbCommand (41ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 17:16:15.021 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 17:16:15.022 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 53.9321ms
+2023-10-22 17:16:15.024 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 17:16:15.025 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 131.7442ms
+2023-10-22 17:28:08.265 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-22 17:28:08.267 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 17:28:08.269 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-22 17:28:08.295 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-22 17:28:08.298 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-22 17:28:08.300 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 28.6848ms
+2023-10-22 17:28:08.301 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-22 17:28:08.303 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 38.0911ms
+2023-10-24 15:22:54.123 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-24 15:22:54.391 +08:00 [INF] Now listening on: http://localhost:5008
+2023-10-24 15:22:54.400 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-24 15:22:54.430 +08:00 [INF] Hosting environment: Development
+2023-10-24 15:22:54.440 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-10-24 15:22:56.692 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger - -
+2023-10-24 15:22:56.786 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger - - - 301 0 - 96.2431ms
+2023-10-24 15:22:56.790 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-10-24 15:22:56.897 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 106.7117ms
+2023-10-24 15:22:56.917 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - -
+2023-10-24 15:22:56.927 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - -
+2023-10-24 15:22:56.924 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - -
+2023-10-24 15:22:57.015 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-24 15:22:57.015 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-24 15:22:57.025 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 98.0169ms
+2023-10-24 15:22:57.031 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - - - 200 144929 text/css 114.1828ms
+2023-10-24 15:22:57.038 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-24 15:22:57.044 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 119.5885ms
+2023-10-24 15:22:57.227 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-10-24 15:22:57.252 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - -
+2023-10-24 15:22:57.254 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-10-24 15:22:57.259 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - - - 200 628 image/png 6.6147ms
+2023-10-24 15:22:57.364 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.3020ms
+2023-10-24 15:23:03.034 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40
+2023-10-24 15:23:03.039 +08:00 [INF] CORS policy execution failed.
+2023-10-24 15:23:03.041 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-10-24 15:23:03.093 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-10-24 15:23:03.128 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:23:04.545 +08:00 [INF] Executed DbCommand (64ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-10-24 15:23:04.821 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-10-24 15:23:04.900 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-10-24 15:23:05.147 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:23:05.158 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 2022.541ms
+2023-10-24 15:23:05.160 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-10-24 15:23:05.173 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 2138.9520ms
+2023-10-24 15:23:05.182 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:23:05.260 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:23:05.266 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:23:05.328 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:23:05.333 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:23:05.355 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 86.4369ms
+2023-10-24 15:23:05.357 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:23:05.359 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 176.6389ms
+2023-10-24 15:23:34.774 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:23:34.779 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:23:34.780 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:23:34.803 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:23:34.805 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:23:34.806 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 23.4988ms
+2023-10-24 15:23:34.807 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:23:34.808 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 33.8587ms
+2023-10-24 15:24:09.134 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:24:09.136 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:24:09.136 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:24:09.150 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:24:09.153 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:24:09.154 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.3716ms
+2023-10-24 15:24:09.155 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:24:09.156 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 22.3507ms
+2023-10-24 15:25:00.489 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:25:00.492 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:00.493 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:25:00.507 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:25:00.511 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:25:00.513 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 17.0843ms
+2023-10-24 15:25:00.514 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:00.516 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.3353ms
+2023-10-24 15:25:01.343 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:25:01.344 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:01.346 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:25:01.364 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:25:01.366 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:25:01.367 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.7291ms
+2023-10-24 15:25:01.369 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:01.370 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.8016ms
+2023-10-24 15:25:03.510 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:25:03.512 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:03.513 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:25:03.531 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:25:03.533 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:25:03.534 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.6764ms
+2023-10-24 15:25:03.536 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:25:03.537 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.6486ms
+2023-10-24 15:27:01.496 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:27:01.503 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:01.504 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:27:01.519 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:27:01.523 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:27:01.524 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 17.6613ms
+2023-10-24 15:27:01.526 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:01.526 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.9226ms
+2023-10-24 15:27:02.277 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:27:02.278 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:02.279 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:27:02.293 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:27:02.295 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:27:02.296 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 15.6294ms
+2023-10-24 15:27:02.297 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:02.299 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 21.4711ms
+2023-10-24 15:27:03.617 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:27:03.619 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:03.621 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:27:03.636 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:27:03.639 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:27:03.640 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 17.4748ms
+2023-10-24 15:27:03.642 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:27:03.643 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 25.7656ms
+2023-10-24 15:43:51.164 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:43:51.167 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:43:51.168 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:43:51.182 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:43:51.184 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:43:51.185 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 15.7008ms
+2023-10-24 15:43:51.186 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:43:51.187 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 22.7701ms
+2023-10-24 15:43:57.165 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:43:57.167 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:43:57.168 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:43:57.185 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:43:57.188 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:43:57.189 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.4394ms
+2023-10-24 15:43:57.190 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:43:57.191 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.0860ms
+2023-10-24 15:47:18.330 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:18.331 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:18.333 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:18.350 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:18.353 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:18.355 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 21.1477ms
+2023-10-24 15:47:18.357 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:18.358 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.6395ms
+2023-10-24 15:47:20.400 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:20.402 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:20.404 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:20.421 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:20.423 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:20.424 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.3971ms
+2023-10-24 15:47:20.426 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:20.426 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.5688ms
+2023-10-24 15:47:23.431 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:23.433 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:23.435 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:23.448 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:23.451 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:23.452 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 15.8501ms
+2023-10-24 15:47:23.453 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:23.454 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 23.3894ms
+2023-10-24 15:47:24.192 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:24.193 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:24.194 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:24.210 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:24.213 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:24.214 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.3715ms
+2023-10-24 15:47:24.216 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:24.219 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 27.3245ms
+2023-10-24 15:47:24.983 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:24.985 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:24.986 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:25.000 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:25.002 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:25.003 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 14.8876ms
+2023-10-24 15:47:25.004 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:25.006 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 22.6532ms
+2023-10-24 15:47:25.742 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:25.744 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:25.744 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:25.763 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:25.766 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:25.767 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 21.3039ms
+2023-10-24 15:47:25.769 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:25.770 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 27.3344ms
+2023-10-24 15:47:39.504 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:39.506 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:39.507 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:39.527 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:39.530 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:39.531 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 22.0867ms
+2023-10-24 15:47:39.532 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:39.533 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.8914ms
+2023-10-24 15:47:40.623 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:40.624 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:40.625 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:40.654 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:40.657 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:40.658 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 30.9182ms
+2023-10-24 15:47:40.659 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:40.661 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 37.9944ms
+2023-10-24 15:47:45.771 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:45.773 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:45.774 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:45.788 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:45.791 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:45.792 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.0186ms
+2023-10-24 15:47:45.793 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:45.794 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 22.8943ms
+2023-10-24 15:47:46.318 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:47:46.320 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:46.321 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:47:46.335 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:47:46.338 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:47:46.340 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.4475ms
+2023-10-24 15:47:46.341 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:47:46.342 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 23.7958ms
+2023-10-24 15:49:56.477 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:49:56.480 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:56.482 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:49:56.501 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:49:56.505 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:49:56.506 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.7843ms
+2023-10-24 15:49:56.508 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:56.509 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 31.8411ms
+2023-10-24 15:49:58.671 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:49:58.673 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:58.674 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:49:58.688 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:49:58.690 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:49:58.692 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.2806ms
+2023-10-24 15:49:58.693 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:58.694 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 22.9537ms
+2023-10-24 15:49:59.214 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:49:59.215 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:59.217 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:49:59.235 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:49:59.238 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:49:59.239 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.8699ms
+2023-10-24 15:49:59.241 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:49:59.242 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.0030ms
+2023-10-24 15:50:02.004 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:50:02.006 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:50:02.007 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:50:02.024 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:50:02.027 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:50:02.028 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 19.5051ms
+2023-10-24 15:50:02.029 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:50:02.030 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 25.7507ms
+2023-10-24 15:53:26.859 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:53:26.862 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:26.864 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:53:26.891 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:53:26.894 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:53:26.895 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 27.8432ms
+2023-10-24 15:53:26.897 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:26.898 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 38.6066ms
+2023-10-24 15:53:29.945 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:53:29.946 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:29.947 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:53:29.962 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:53:29.964 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:53:29.965 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 15.4096ms
+2023-10-24 15:53:29.967 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:29.968 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 23.4680ms
+2023-10-24 15:53:39.129 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:53:39.131 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:39.132 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:53:39.152 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:53:39.154 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:53:39.155 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.3242ms
+2023-10-24 15:53:39.159 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:53:39.162 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 32.0129ms
+2023-10-24 15:57:06.414 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:57:06.428 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:57:06.430 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:57:06.480 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:57:06.639 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:57:06.653 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 204.7349ms
+2023-10-24 15:57:06.656 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:57:06.657 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 242.9809ms
+2023-10-24 15:59:41.333 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:59:41.335 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:59:41.337 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:59:41.360 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:59:41.364 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:59:41.366 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 27.1568ms
+2023-10-24 15:59:41.368 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:59:41.369 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 36.4313ms
+2023-10-24 15:59:50.401 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 15:59:50.403 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:59:50.404 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 15:59:50.419 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 15:59:50.423 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 15:59:50.425 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.9528ms
+2023-10-24 15:59:50.426 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 15:59:50.428 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.6855ms
+2023-10-24 16:01:44.778 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:01:44.780 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:44.781 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:01:44.797 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:01:44.801 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:01:44.802 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 17.9611ms
+2023-10-24 16:01:44.804 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:44.805 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.8380ms
+2023-10-24 16:01:54.505 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:01:54.507 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:54.507 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:01:54.523 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:01:54.525 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:01:54.526 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.5503ms
+2023-10-24 16:01:54.528 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:54.530 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 24.7639ms
+2023-10-24 16:01:56.151 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:01:56.153 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:56.155 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:01:56.173 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:01:56.176 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:01:56.178 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 20.5836ms
+2023-10-24 16:01:56.179 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:01:56.181 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.3055ms
+2023-10-24 16:13:39.444 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:13:39.446 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:13:39.449 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:13:39.463 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:13:39.467 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:13:39.468 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 16.7353ms
+2023-10-24 16:13:39.469 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:13:39.471 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 26.2764ms
+2023-10-24 16:13:40.199 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:13:40.201 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:13:40.202 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:13:40.224 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:13:40.228 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:13:40.230 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 25.2435ms
+2023-10-24 16:13:40.231 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:13:40.232 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 33.3217ms
+2023-10-24 16:15:09.569 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:15:09.571 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:15:09.572 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:15:09.593 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:15:09.597 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:15:09.599 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 25.152ms
+2023-10-24 16:15:09.601 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:15:09.603 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 33.4440ms
+2023-10-24 16:15:24.027 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:15:24.043 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:15:24.048 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:15:24.081 +08:00 [INF] Executed DbCommand (17ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:15:24.089 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:15:24.090 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 39.7616ms
+2023-10-24 16:15:24.092 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:15:24.093 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 65.7396ms
+2023-10-24 16:18:00.805 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-24 16:18:00.834 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:18:00.845 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-24 16:18:00.902 +08:00 [INF] Executed DbCommand (15ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-24 16:18:00.911 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-24 16:18:00.913 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 61.1867ms
+2023-10-24 16:18:00.914 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-24 16:18:00.916 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 111.3001ms
+2023-10-26 15:46:50.820 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-10-26 15:46:51.063 +08:00 [INF] Now listening on: http://localhost:5008
+2023-10-26 15:46:51.071 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:46:51.076 +08:00 [INF] Hosting environment: Development
+2023-10-26 15:46:51.081 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-10-26 15:46:54.729 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-10-26 15:46:54.902 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 175.1074ms
+2023-10-26 15:46:55.172 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-10-26 15:46:55.286 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 114.7336ms
+2023-10-26 15:47:08.843 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-10-26 15:47:09.268 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-26 15:47:09.293 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-10-26 15:47:10.757 +08:00 [INF] Executed DbCommand (65ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-10-26 15:47:10.911 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-10-26 15:47:10.953 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 1653.1585ms
+2023-10-26 15:47:10.957 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-10-26 15:47:10.969 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 2125.1638ms
 2023-10-21 11:23:10.859 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
 2023-10-21 11:23:10.937 +08:00 [INF] Now listening on: http://localhost:5008
 2023-10-21 11:23:10.944 +08:00 [INF] Application started. Press Ctrl+C to shut down.
