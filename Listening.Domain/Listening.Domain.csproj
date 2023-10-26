@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Noodles.Common\Noodles.Common.csproj" />
+      <ProjectReference Include="..\Noodles.DomainCommons\Noodles.DomainCommons.csproj" />
+    </ItemGroup>
+
+
+
+
+
+
+    <ItemGroup>
+      <PackageReference Include="Opportunity.LrcParser" Version="1.0.4" />
+      <PackageReference Include="SubtitlesParser" Version="1.5.1" />
+    </ItemGroup>
+
+
+
+
+
+
+
+</Project>

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\CommonInitializer\CommonInitializer.csproj" />
+      <ProjectReference Include="..\FileService.Domain\FileService.Domain.csproj" />
+      <ProjectReference Include="..\Listening.Domain\Listening.Domain.csproj" />
+      <ProjectReference Include="..\Noodles.Infrastructure\Noodles.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
