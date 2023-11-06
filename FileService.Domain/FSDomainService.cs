@@ -13,12 +13,11 @@ namespace FileService.Domain
         private readonly IFSRepository repository;
         private readonly IStorageClient backupStorage;//备份服务器
         private readonly IStorageClient remoteStorage;//文件存储服务器
-        public FSDomainService(IFSRepository repository,
-       IEnumerable<IStorageClient> storageClients)
+        public FSDomainService(IFSRepository repository,IEnumerable<IStorageClient> storageClients)
         {
             this.repository = repository;
             //用这种方式可以解决内置DI不能使用名字注入不同实例的问题，而且从原则上来讲更加优美
-            this.backupStorage = storageClients.First(c => c.StorageType == StorageType.Backup);
+            //this.backupStorage = storageClients.First(c => c.StorageType == StorageType.Backup);
             this.remoteStorage = storageClients.First(c => c.StorageType == StorageType.Public);
         }
 
