@@ -1,6 +1,7 @@
 using Listening.Admin.WebAPI.Controllers.Albums.Request;
 using Listening.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Noodles.Common.Validators;
 namespace Listening.Admin.WebAPI.Controllers.Albums;
 
@@ -102,5 +103,20 @@ public class AlbumController : ControllerBase
     {
         await domainService.SortAlbumsAsync(categoryId, req.SortedAlbumIds);
         return Ok();
+    }
+
+    [HttpGet]
+    [Route("{getCategoryList}")]
+    public async Task<Album[]> GetPageList(AlbumQueryRequest req)
+    {
+        try
+        {
+            return null;
+        }
+        catch (Exception ex )
+        {
+            Console.WriteLine(ex );
+            throw;
+        }
     }
 }

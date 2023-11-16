@@ -5,7 +5,7 @@ public record AggregateRootEntity:BaseEntity,IAggregateRoot, ISoftDelete, IHasCr
     public bool IsDeleted { get; private set; }
     public DateTime CreationTime { get; private set; } = DateTime.Now;
     public DateTime? DeletionTime { get; private set; }
-    public DateTime? LastModificationTime { get; private set; }
+    public DateTime? LastModificationTime { get; set; }
     
     public virtual void SoftDelete()
     {

@@ -64,6 +64,7 @@ public class CategoryController : ControllerBase
         }
         cat.ChangeName(request.Name);
         cat.ChangeCoverUrl(request.CoverUrl);
+        cat.ChangeTime();
         return Ok();
     }
 

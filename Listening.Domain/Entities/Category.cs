@@ -46,5 +46,11 @@ namespace Listening.Domain.Entities
             this.CoverUrl = value;
             return this;
         }
+
+        public Category ChangeTime()
+        {
+            this.LastModificationTime = DateTime.Now;
+            return this;
+        }
     }
 }
