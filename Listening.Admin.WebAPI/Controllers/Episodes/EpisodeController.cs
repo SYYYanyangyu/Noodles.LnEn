@@ -1,10 +1,8 @@
-﻿using Listening.Admin.WebAPI.Episodes;
-using Listening.Infrastructure;
+﻿using Listening.Infrastructure;
 using Microsoft.AspNetCore.Authorization;
 using Noodles.Common;
 using Noodles.Common.Validators;
 using Noodles.EventBus;
-using IListeningRepository = Listening.Domain.IListeningRepository;
 
 namespace Listening.Admin.WebAPI.Controllers.Episodes;
 [Route("[controller]/[action]")]

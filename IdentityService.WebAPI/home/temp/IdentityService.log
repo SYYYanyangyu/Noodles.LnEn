@@ -4449,3 +4449,487 @@ WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
 2023-10-22 23:43:51.790 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 30.5292ms
 2023-10-22 23:43:51.880 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
 2023-10-22 23:43:51.884 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.5672ms
+2023-11-03 09:02:30.431 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-03 09:02:30.709 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-03 09:02:30.716 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-03 09:02:30.720 +08:00 [INF] Hosting environment: Development
+2023-11-03 09:02:30.756 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-03 09:02:30.873 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-11-03 09:02:31.084 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 211.7820ms
+2023-11-03 09:02:31.472 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-11-03 09:02:31.637 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 164.9545ms
+2023-11-03 09:03:35.032 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:03:35.160 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-11-03 09:03:35.169 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-11-03 09:03:35.170 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 401 0 - 138.4766ms
+2023-11-03 09:03:35.233 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/admin/acl/index/logout - 0
+2023-11-03 09:03:35.238 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:03:35.239 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:03:35.248 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/admin/acl/index/logout - 0 - 404 0 - 15.2516ms
+2023-11-03 09:03:49.125 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40
+2023-11-03 09:03:49.131 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:03:49.133 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:03:49.138 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:03:49.177 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:03:50.670 +08:00 [INF] Executed DbCommand (78ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:03:50.906 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:03:50.989 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-03 09:03:51.223 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:03:51.234 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 2049.937ms
+2023-11-03 09:03:51.237 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:03:51.255 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 2129.6965ms
+2023-11-03 09:03:51.256 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:03:51.381 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:03:51.384 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:03:51.443 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:03:51.447 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:03:51.473 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 87.5056ms
+2023-11-03 09:03:51.475 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:03:51.476 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 220.5634ms
+2023-11-03 09:04:23.986 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:04:23.990 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:04:23.993 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:04:24.023 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:04:24.025 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:04:24.027 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 31.1626ms
+2023-11-03 09:04:24.028 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:04:24.029 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 42.5250ms
+2023-11-03 09:04:29.218 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:04:29.221 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:04:29.224 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:04:29.243 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:04:29.246 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:04:29.247 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 21.1301ms
+2023-11-03 09:04:29.248 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:04:29.249 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 30.8657ms
+2023-11-03 09:12:58.929 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:12:58.967 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:12:58.969 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:12:58.986 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:12:58.993 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:12:58.997 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 26.1628ms
+2023-11-03 09:12:58.998 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:12:58.999 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 70.3803ms
+2023-11-03 09:13:06.896 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/admin/acl/index/logout - 0
+2023-11-03 09:13:06.897 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:13:06.898 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:13:06.899 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/admin/acl/index/logout - 0 - 404 0 - 3.0457ms
+2023-11-03 09:13:28.525 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:13:28.530 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:28.531 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:13:28.548 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:13:28.551 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:13:28.551 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 18.9954ms
+2023-11-03 09:13:28.553 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:28.554 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 28.2926ms
+2023-11-03 09:13:49.775 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:13:49.778 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:49.779 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:13:49.808 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:13:49.811 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:13:49.815 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 34.4387ms
+2023-11-03 09:13:49.819 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:49.820 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 45.3452ms
+2023-11-03 09:13:58.391 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:13:58.393 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:58.395 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:13:58.439 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:13:58.460 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:13:58.461 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 62.0161ms
+2023-11-03 09:13:58.466 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:13:58.468 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 77.6022ms
+2023-11-03 09:19:00.616 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:19:00.623 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:19:00.623 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:19:00.625 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/GetUserInfo - - - 204 - - 10.4633ms
+2023-11-03 09:19:00.655 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/admin/acl/index/logout - -
+2023-11-03 09:19:00.656 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:19:00.656 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:19:00.658 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/admin/acl/index/logout - - - 204 - - 2.7569ms
+2023-11-03 09:19:09.568 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:19:09.569 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:19:09.569 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:19:09.571 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/GetUserInfo - - - 204 - - 2.8712ms
+2023-11-03 09:19:09.573 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/admin/acl/index/logout - -
+2023-11-03 09:19:09.574 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:19:09.574 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:19:09.575 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/admin/acl/index/logout - - - 204 - - 2.2060ms
+2023-11-03 09:19:39.218 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:19:39.219 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:19:39.220 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:19:39.222 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 4.5533ms
+2023-11-03 09:22:59.157 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:22:59.160 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:22:59.163 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:22:59.166 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 9.4155ms
+2023-11-03 09:23:02.854 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:23:02.857 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:23:02.859 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:23:02.860 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 5.8866ms
+2023-11-03 09:25:26.670 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-03 09:25:26.801 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-03 09:25:26.810 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-03 09:25:26.814 +08:00 [INF] Hosting environment: Development
+2023-11-03 09:25:26.818 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-03 09:25:26.996 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger - -
+2023-11-03 09:25:27.056 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger - - - 301 0 - 60.8455ms
+2023-11-03 09:25:27.060 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-11-03 09:25:27.145 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 84.7247ms
+2023-11-03 09:25:27.157 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - -
+2023-11-03 09:25:27.157 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - -
+2023-11-03 09:25:27.157 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - -
+2023-11-03 09:25:27.208 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-03 09:25:27.213 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - - - 200 144929 text/css 55.8499ms
+2023-11-03 09:25:27.213 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-03 09:25:27.216 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 58.3866ms
+2023-11-03 09:25:27.228 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-03 09:25:27.230 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 72.9214ms
+2023-11-03 09:25:27.394 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-11-03 09:25:27.410 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - -
+2023-11-03 09:25:27.412 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-03 09:25:27.414 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - - - 200 628 image/png 4.5734ms
+2023-11-03 09:25:27.512 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.4747ms
+2023-11-03 09:26:01.454 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:26:01.460 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:26:01.462 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:26:01.465 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 10.5512ms
+2023-11-03 09:26:07.735 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:26:07.739 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:26:07.740 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:26:07.743 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 7.2441ms
+2023-11-03 09:26:50.212 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:26:50.215 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:26:50.217 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:26:50.220 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 7.6302ms
+2023-11-03 09:29:19.436 +08:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:29:19.439 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:29:19.441 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:29:19.443 +08:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5008/Login/LoginByUserNameAndPwd - - - 204 - - 7.5521ms
+2023-11-03 09:29:57.608 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-03 09:30:35.220 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-03 09:30:35.229 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-03 09:30:35.233 +08:00 [INF] Hosting environment: Development
+2023-11-03 09:30:35.237 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-03 09:30:41.061 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger - -
+2023-11-03 09:30:41.120 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger - - - 301 0 - 59.7444ms
+2023-11-03 09:30:41.125 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-11-03 09:30:41.209 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 84.3156ms
+2023-11-03 09:30:41.218 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - -
+2023-11-03 09:30:41.218 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - -
+2023-11-03 09:30:41.218 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - -
+2023-11-03 09:30:41.255 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-03 09:30:41.255 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-03 09:30:41.255 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-03 09:30:41.259 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 40.5075ms
+2023-11-03 09:30:41.259 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 40.4314ms
+2023-11-03 09:30:41.259 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - - - 200 144929 text/css 40.4924ms
+2023-11-03 09:30:41.452 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-11-03 09:30:41.469 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - -
+2023-11-03 09:30:41.471 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-03 09:30:41.474 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - - - 200 628 image/png 4.1032ms
+2023-11-03 09:30:41.563 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.7591ms
+2023-11-03 09:34:03.119 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-11-03 09:34:03.125 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 6.9294ms
+2023-11-03 09:34:03.217 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-11-03 09:34:03.224 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.8070ms
+2023-11-03 09:34:12.805 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40
+2023-11-03 09:34:12.810 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:34:12.814 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:34:12.922 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:34:12.957 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:34:29.720 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:34:29.945 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:34:30.013 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-03 09:34:30.176 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:34:30.186 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 17223.4532ms
+2023-11-03 09:34:30.189 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:34:30.198 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 17392.4672ms
+2023-11-03 09:34:32.929 +08:00 [INF] Request starting HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40
+2023-11-03 09:34:32.932 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:34:32.933 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:34:32.936 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:34:32.937 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:34:35.232 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:34:35.322 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 09:34:35.338 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-03 09:34:35.341 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:34:35.342 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 2402.0723ms
+2023-11-03 09:34:35.343 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 09:34:35.345 +08:00 [INF] Request finished HTTP/1.1 POST http://localhost:5008/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 2415.7397ms
+2023-11-03 09:34:35.362 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - -
+2023-11-03 09:34:35.490 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:34:35.493 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 09:34:35.531 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 09:34:35.534 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 09:34:35.554 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 59.88ms
+2023-11-03 09:34:35.556 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 09:34:35.558 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 196.0765ms
+2023-11-03 09:50:23.239 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/index.html - -
+2023-11-03 09:50:23.247 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/index.html - - - 200 - text/html;charset=utf-8 7.2330ms
+2023-11-03 09:50:23.257 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - -
+2023-11-03 09:50:23.258 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - -
+2023-11-03 09:50:23.258 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - -
+2023-11-03 09:50:23.267 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-03 09:50:23.270 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-03 09:50:23.272 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-03 09:50:23.274 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui.css - - - 200 144929 text/css 16.4468ms
+2023-11-03 09:50:23.275 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 16.6381ms
+2023-11-03 09:50:23.276 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 18.7900ms
+2023-11-03 09:50:23.450 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - -
+2023-11-03 09:50:23.464 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - -
+2023-11-03 09:50:23.465 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-03 09:50:23.467 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/favicon-32x32.png - - - 200 628 image/png 3.3117ms
+2023-11-03 09:50:23.474 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5008/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.6800ms
+2023-11-03 09:52:39.600 +08:00 [INF] Request starting HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:52:39.602 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:52:39.603 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:52:39.604 +08:00 [INF] Request finished HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 4.1146ms
+2023-11-03 09:52:42.208 +08:00 [INF] Request starting HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:52:42.210 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:52:42.210 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:52:42.211 +08:00 [INF] Request finished HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 2.8921ms
+2023-11-03 09:53:50.482 +08:00 [INF] Request starting HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:53:50.484 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:53:50.485 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:53:50.485 +08:00 [INF] Request finished HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 3.3964ms
+2023-11-03 09:57:05.916 +08:00 [INF] Request starting HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:57:05.918 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:57:05.918 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:57:05.919 +08:00 [INF] Request finished HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 2.9705ms
+2023-11-03 09:57:11.287 +08:00 [INF] Request starting HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 09:57:11.288 +08:00 [INF] CORS policy execution failed.
+2023-11-03 09:57:11.289 +08:00 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2023-11-03 09:57:11.290 +08:00 [INF] Request finished HTTP/1.0 OPTIONS http://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 3.1203ms
+2023-11-03 10:11:06.444 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-03 10:11:06.668 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-03 10:11:06.674 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-03 10:11:06.684 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-03 10:11:06.690 +08:00 [INF] Hosting environment: Development
+2023-11-03 10:11:06.694 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-03 10:11:07.045 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2023-11-03 10:11:07.103 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 57.6975ms
+2023-11-03 10:11:07.114 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-03 10:11:07.248 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 133.6515ms
+2023-11-03 10:11:07.310 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2023-11-03 10:11:07.310 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2023-11-03 10:11:07.311 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2023-11-03 10:11:07.548 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-03 10:11:07.548 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-03 10:11:07.565 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 144929 text/css 255.8617ms
+2023-11-03 10:11:07.564 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 252.9706ms
+2023-11-03 10:11:07.590 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-03 10:11:07.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 281.0319ms
+2023-11-03 10:11:07.914 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2023-11-03 10:11:07.917 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-03 10:11:07.917 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 3.8386ms
+2023-11-03 10:11:07.913 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-03 10:11:08.157 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 243.8067ms
+2023-11-03 10:11:14.769 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-03 10:11:14.772 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 2.8801ms
+2023-11-03 10:11:15.057 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-03 10:11:15.063 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.0482ms
+2023-11-03 10:30:53.529 +08:00 [INF] Request starting HTTP/1.0 OPTIONS https://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 10:30:53.534 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:30:53.554 +08:00 [INF] Request finished HTTP/1.0 OPTIONS https://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 25.3757ms
+2023-11-03 10:30:53.573 +08:00 [INF] Request starting HTTP/1.0 POST https://localhost/Login/LoginByUserNameAndPwd application/json 40
+2023-11-03 10:30:53.576 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:30:53.673 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 10:30:53.707 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 10:31:08.303 +08:00 [INF] Executed DbCommand (59ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 10:31:08.566 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 10:31:08.664 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-03 10:31:08.924 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 10:31:08.944 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 15230.5926ms
+2023-11-03 10:31:08.946 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 10:31:08.958 +08:00 [INF] Request finished HTTP/1.0 POST https://localhost/Login/LoginByUserNameAndPwd application/json 40 - 0 - application/json;+charset=utf-8 15384.4133ms
+2023-11-03 10:31:11.300 +08:00 [INF] Request starting HTTP/1.0 OPTIONS https://localhost/Login/LoginByUserNameAndPwd - -
+2023-11-03 10:31:11.302 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:31:11.303 +08:00 [INF] Request finished HTTP/1.0 OPTIONS https://localhost/Login/LoginByUserNameAndPwd - - - 204 - - 3.4573ms
+2023-11-03 10:31:11.332 +08:00 [INF] Request starting HTTP/1.0 POST https://localhost/Login/LoginByUserNameAndPwd application/json 40
+2023-11-03 10:31:11.333 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:31:11.336 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 10:31:11.338 +08:00 [INF] Route matched with {action = "LoginByUserNameAndPwd", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] LoginByUserNameAndPwd(IdentityService.WebAPI.Controllers.Login.LoginByUserNameAndPwdRequest) on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 10:31:13.475 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 10:31:13.562 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-03 10:31:13.577 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [T_Roles] AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-03 10:31:13.581 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 10:31:13.582 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI) in 2242.9125ms
+2023-11-03 10:31:13.583 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.LoginByUserNameAndPwd (IdentityService.WebAPI)'
+2023-11-03 10:31:13.584 +08:00 [INF] Request finished HTTP/1.0 POST https://localhost/Login/LoginByUserNameAndPwd application/json 40 - 200 - application/json;+charset=utf-8 2252.4575ms
+2023-11-03 10:31:13.648 +08:00 [INF] Request starting HTTP/1.0 OPTIONS https://localhost/Login/GetUserInfo - -
+2023-11-03 10:31:13.650 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:31:13.651 +08:00 [INF] Request finished HTTP/1.0 OPTIONS https://localhost/Login/GetUserInfo - - - 204 - - 2.6390ms
+2023-11-03 10:31:13.668 +08:00 [INF] Request starting HTTP/1.0 GET https://localhost/Login/GetUserInfo - -
+2023-11-03 10:31:13.670 +08:00 [INF] CORS policy execution successful.
+2023-11-03 10:31:13.742 +08:00 [INF] Executing endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 10:31:13.746 +08:00 [INF] Route matched with {action = "GetUserInfo", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM]] GetUserInfo() on controller IdentityService.WebAPI.Controllers.Login.LoginController (IdentityService.WebAPI).
+2023-11-03 10:31:13.787 +08:00 [INF] Executed DbCommand (13ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AccessFailedCount], [t].[ConcurrencyStamp], [t].[CreationTime], [t].[DeletionTime], [t].[Email], [t].[EmailConfirmed], [t].[IsDeleted], [t].[LockoutEnabled], [t].[LockoutEnd], [t].[NormalizedEmail], [t].[NormalizedUserName], [t].[PasswordHash], [t].[PhoneNumber], [t].[PhoneNumberConfirmed], [t].[SecurityStamp], [t].[TwoFactorEnabled], [t].[UserName]
+FROM [T_Users] AS [t]
+WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
+2023-11-03 10:31:13.791 +08:00 [INF] Executing ObjectResult, writing value of type 'IdentityService.WebAPI.Controllers.Login.ViewModel.LoginVM'.
+2023-11-03 10:31:13.812 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 64.4122ms
+2023-11-03 10:31:13.814 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
+2023-11-03 10:31:13.816 +08:00 [INF] Request finished HTTP/1.0 GET https://localhost/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 147.8854ms
+2023-11-16 13:01:22.064 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 13:01:22.218 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 13:01:22.221 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 13:01:22.227 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-16 13:01:22.230 +08:00 [INF] Hosting environment: Development
+2023-11-16 13:01:22.233 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-16 13:01:22.778 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger - -
+2023-11-16 13:01:22.866 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger - - - 301 0 - 89.6313ms
+2023-11-16 13:01:22.938 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-16 13:01:23.132 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 193.7310ms
+2023-11-16 13:01:23.135 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - -
+2023-11-16 13:01:23.138 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2023-11-16 13:01:23.139 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2023-11-16 13:01:23.164 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-16 13:01:23.165 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 144929 text/css 29.7094ms
+2023-11-16 13:01:23.170 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2023-11-16 13:01:23.179 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 8.3226ms
+2023-11-16 13:01:23.189 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2023-11-16 13:01:23.191 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-16 13:01:23.198 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 59.3302ms
+2023-11-16 13:01:23.227 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-16 13:01:23.231 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.4685ms
+2023-11-16 13:01:23.232 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 94.3418ms
+2023-11-16 13:01:23.658 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-16 13:01:23.745 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - -
+2023-11-16 13:01:23.747 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-16 13:01:23.748 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/favicon-32x32.png - - - 200 628 image/png 2.8412ms
+2023-11-16 13:01:23.812 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 153.4171ms
+2023-11-16 16:43:38.174 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 16:43:38.593 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 16:43:38.606 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 16:56:59.157 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 16:56:59.321 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 16:56:59.325 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 16:56:59.330 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-16 16:56:59.334 +08:00 [INF] Hosting environment: Development
+2023-11-16 16:56:59.337 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-16 16:56:59.951 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-16 16:57:00.228 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 279.1882ms
+2023-11-16 16:57:00.496 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2023-11-16 16:57:00.496 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2023-11-16 16:57:00.516 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 19.5029ms
+2023-11-16 16:57:00.544 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.4828ms
+2023-11-16 16:57:00.854 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-16 16:57:01.026 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.1927ms
+2023-11-16 17:08:42.112 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 17:08:42.268 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 17:08:42.271 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 17:08:42.275 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-16 17:08:42.278 +08:00 [INF] Hosting environment: Development
+2023-11-16 17:08:42.354 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-16 17:08:42.775 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-16 17:08:43.040 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 266.9743ms
+2023-11-16 17:08:43.063 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2023-11-16 17:08:43.063 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2023-11-16 17:08:43.109 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 45.4786ms
+2023-11-16 17:08:43.143 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.2950ms
+2023-11-16 17:08:43.241 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-16 17:08:43.475 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.4406ms
+2023-11-16 17:09:26.882 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 17:09:27.030 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 17:09:27.032 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 17:09:27.039 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-16 17:09:27.042 +08:00 [INF] Hosting environment: Development
+2023-11-16 17:09:27.049 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-16 17:09:27.383 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-16 17:09:27.585 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 201.1772ms
+2023-11-16 17:09:27.592 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2023-11-16 17:09:27.592 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2023-11-16 17:09:27.612 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 20.0333ms
+2023-11-16 17:09:27.624 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.7014ms
+2023-11-16 17:09:27.738 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-16 17:09:27.904 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 166.6354ms
+2023-11-16 17:18:05.024 +08:00 [INF] User profile is available. Using 'C:\Users\WW\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-16 17:18:05.197 +08:00 [INF] Now listening on: https://localhost:7294
+2023-11-16 17:18:05.203 +08:00 [INF] Now listening on: http://localhost:5008
+2023-11-16 17:18:05.210 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-16 17:18:05.214 +08:00 [INF] Hosting environment: Development
+2023-11-16 17:18:05.217 +08:00 [INF] Content root path: F:\Noodles.LnEn\IdentityService.WebAPI
+2023-11-16 17:18:05.817 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/index.html - -
+2023-11-16 17:18:06.157 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 342.7071ms
+2023-11-16 17:18:06.188 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - -
+2023-11-16 17:18:06.194 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_framework/aspnetcore-browser-refresh.js - - - 200 12376 application/javascript;+charset=utf-8 5.4049ms
+2023-11-16 17:18:06.205 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/_vs/browserLink - -
+2023-11-16 17:18:06.241 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 35.9259ms
+2023-11-16 17:18:06.559 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-11-16 17:18:06.684 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.1842ms
