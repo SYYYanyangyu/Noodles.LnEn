@@ -26,9 +26,8 @@ public class EncodingEpisodeHelper
     /// <summary>
     /// 增加待转码的任务的详细信息
     /// </summary>
-    /// <param name="albumId"></param>
+    /// <param name="episodeId"></param>
     /// <param name="episode"></param>
-    /// <returns></returns>
     public async Task AddEncodingEpisodeAsync(Guid episodeId, EncodingEpisodeInfo episode)
     {
         string redisKeyForEpisode = GetStatusKeyForEpisode(episodeId);
@@ -54,10 +53,8 @@ public class EncodingEpisodeHelper
     /// <summary>
     /// 删除一个Episode任务
     /// </summary>
-    /// <param name="db"></param>
     /// <param name="episodeId"></param>
     /// <param name="albumId"></param>
-    /// <returns></returns>
     public async Task RemoveEncodingEpisodeAsync(Guid episodeId, Guid albumId)
     {
         string redisKeyForEpisode = GetStatusKeyForEpisode(episodeId);
@@ -70,10 +67,8 @@ public class EncodingEpisodeHelper
     /// <summary>
     /// 修改Episode的转码状态
     /// </summary>
-    /// <param name="db"></param>
     /// <param name="episodeId"></param>
     /// <param name="status"></param>
-    /// <returns></returns>
     public async Task UpdateEpisodeStatusAsync(Guid episodeId, string status)
     {
         string redisKeyForEpisode = GetStatusKeyForEpisode(episodeId);
@@ -87,7 +82,6 @@ public class EncodingEpisodeHelper
     /// <summary>
     /// 获得Episode的转码状态
     /// </summary>
-    /// <param name="db"></param>
     /// <param name="episodeId"></param>
     /// <returns></returns>
     public async Task<EncodingEpisodeInfo> GetEncodingEpisodeAsync(Guid episodeId)
