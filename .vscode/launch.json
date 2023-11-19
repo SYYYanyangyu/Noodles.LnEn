@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: IdentityService.WebAPI [http]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}/IdentityService.WebAPI/IdentityService.WebAPI.csproj",
+            "launchConfigurationId": "TargetFramework=;http"
+        }
+    ]
+}
