@@ -69,7 +69,7 @@ namespace FileService.WebAPI.Controllers.Uploader
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadImages([FromForm] IFormFile file)
+        public async Task<IActionResult> UploadImages([FromForm] IFormFile file, CancellationToken cancellationToken = default)
         {
             try
             {
