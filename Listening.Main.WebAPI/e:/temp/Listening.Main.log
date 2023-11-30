@@ -1,0 +1,79 @@
+2023-11-19 17:56:30.961 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-19 17:56:31.000 +08:00 [INF] Now listening on: http://localhost:5156
+2023-11-19 17:56:31.001 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-19 17:56:31.002 +08:00 [INF] Hosting environment: Development
+2023-11-19 17:56:31.002 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/Listening.Main.WebAPI
+2023-11-19 17:56:31.059 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger - -
+2023-11-19 17:56:31.078 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger - - - 301 0 - 19.9734ms
+2023-11-19 17:56:31.080 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-11-19 17:56:31.109 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 28.9414ms
+2023-11-19 17:56:31.116 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui.css - -
+2023-11-19 17:56:31.116 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - -
+2023-11-19 17:56:31.116 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - -
+2023-11-19 17:56:31.233 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-19 17:56:31.233 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-19 17:56:31.233 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-19 17:56:31.233 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 117.2317ms
+2023-11-19 17:56:31.233 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 117.4762ms
+2023-11-19 17:56:31.233 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui.css - - - 200 144929 text/css 117.6654ms
+2023-11-19 17:56:31.309 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-11-19 17:56:31.316 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/favicon-32x32.png - -
+2023-11-19 17:56:31.316 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-19 17:56:31.316 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/favicon-32x32.png - - - 200 628 image/png 0.3482ms
+2023-11-19 17:56:31.345 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.5557ms
+2023-11-21 21:27:38.294 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-21 21:27:38.327 +08:00 [INF] Now listening on: http://localhost:5156
+2023-11-21 21:27:38.329 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-21 21:27:38.330 +08:00 [INF] Hosting environment: Development
+2023-11-21 21:27:38.330 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/Listening.Main.WebAPI
+2023-11-21 21:27:38.378 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-11-21 21:27:38.428 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 50.5950ms
+2023-11-21 21:27:38.542 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-11-21 21:27:38.581 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.3205ms
+2023-11-23 21:50:54.245 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-23 21:50:54.278 +08:00 [INF] Now listening on: http://localhost:5156
+2023-11-23 21:50:54.279 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-23 21:50:54.280 +08:00 [INF] Hosting environment: Development
+2023-11-23 21:50:54.281 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/Listening.Main.WebAPI
+2023-11-23 21:50:54.358 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger - -
+2023-11-23 21:50:54.378 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger - - - 301 0 - 20.2938ms
+2023-11-23 21:50:54.380 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-11-23 21:50:54.410 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 29.5742ms
+2023-11-23 21:50:54.415 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui.css - -
+2023-11-23 21:50:54.416 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - -
+2023-11-23 21:50:54.416 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - -
+2023-11-23 21:50:54.716 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-23 21:50:54.716 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-23 21:50:54.717 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-23 21:50:54.717 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui.css - - - 200 144929 text/css 302.3572ms
+2023-11-23 21:50:54.717 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 301.8887ms
+2023-11-23 21:50:54.717 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 301.0797ms
+2023-11-23 21:50:54.791 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-11-23 21:50:54.800 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/favicon-32x32.png - -
+2023-11-23 21:50:54.800 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-23 21:50:54.801 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/favicon-32x32.png - - - 200 628 image/png 0.3679ms
+2023-11-23 21:50:54.827 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.4319ms
+2023-11-25 15:05:12.926 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-25 15:05:12.960 +08:00 [INF] Now listening on: http://localhost:5156
+2023-11-25 15:05:12.961 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-25 15:05:12.962 +08:00 [INF] Hosting environment: Development
+2023-11-25 15:05:12.963 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/Listening.Main.WebAPI
+2023-11-25 15:05:13.039 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-11-25 15:05:13.094 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 55.8472ms
+2023-11-25 15:05:13.103 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - -
+2023-11-25 15:05:13.104 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - -
+2023-11-25 15:05:13.475 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-25 15:05:13.475 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-25 15:05:13.476 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 372.8530ms
+2023-11-25 15:05:13.476 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 372.0772ms
+2023-11-25 15:05:13.567 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-11-25 15:05:13.607 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 39.6858ms
+2023-11-25 21:50:50.427 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-25 21:50:50.462 +08:00 [INF] Now listening on: http://localhost:5156
+2023-11-25 21:50:50.464 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-25 21:50:50.464 +08:00 [INF] Hosting environment: Development
+2023-11-25 21:50:50.465 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/Listening.Main.WebAPI
+2023-11-25 21:50:50.504 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/index.html - -
+2023-11-25 21:50:50.553 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/index.html - - - 200 - text/html;charset=utf-8 49.2465ms
+2023-11-25 21:50:50.658 +08:00 [INF] Request starting HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - -
+2023-11-25 21:50:50.693 +08:00 [INF] Request finished HTTP/1.1 GET http://localhost:5156/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 34.3684ms
