@@ -1,9 +1,10 @@
 using MediaEncoder.Domain.Events;
+using MediatR;
 using Noodles.EventBus;
 
 namespace MediaEncoder.WebAPI.EventHandlers;
 
-public class EncodingItemFailedEventHandler
+public class EncodingItemFailedEventHandler : INotificationHandler<EncodingItemFailedEvent>
 {
     private readonly IEventBus eventBus;
 

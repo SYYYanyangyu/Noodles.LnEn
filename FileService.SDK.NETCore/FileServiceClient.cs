@@ -52,7 +52,12 @@ namespace FileService.SDK.NETCore
                 using var fileContent = new StreamContent(file.OpenRead());
                 content.Add(fileContent, "file", file.Name);
                 var httpClient = httpClientFactory.CreateClient();
-                Uri requestUri = new Uri(serverRoot + "/Uploader/Upload");
+
+                 // nginx 端口
+                string serverRoot = "http://localhost:8089";
+
+                Uri requestUri = new Uri(serverRoot + "/FileService/Uploader/Upload");
+
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
                 var respMsg = await httpClient.PostAsync(requestUri, content, stoppingToken);
                 if (!respMsg.IsSuccessStatusCode)

@@ -17,7 +17,7 @@ namespace FileService.Domain
         {
             this.repository = repository;
             //用这种方式可以解决内置DI不能使用名字注入不同实例的问题，而且从原则上来讲更加优美
-            //this.backupStorage = storageClients.First(c => c.StorageType == StorageType.Backup);
+            this.backupStorage = storageClients.First(c => c.StorageType == StorageType.Backup);
             this.remoteStorage = storageClients.First(c => c.StorageType == StorageType.Public);
         }
 
