@@ -42,7 +42,7 @@ namespace FileService.Infrastructure.Services
                 using Stream outStream = File.OpenWrite(fullPath);
                 await content.CopyToAsync(outStream, cancellationToken);
                 var req = httpContextAccessor.HttpContext.Request;
-                string url = req.Scheme + "://" + req.Host + "/FileService/" + key;
+                string url = req.Scheme + "://" + req.Host + ":8089" + "/FileService/" + key;
                 return new Uri(url);
             }
             catch (Exception ex)
