@@ -1,6 +1,6 @@
 namespace Noodles.Common;
 
-public  static class StringExtensions
+public static class StringExtensions
 {
     public static bool EqualsIgnoreCase(this string s1, string s2)
     {

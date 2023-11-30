@@ -196,11 +196,16 @@ public class EncodingBgService : BackgroundService
             }
             //开始上传
             logger.LogInterpolatedInformation($"Id={id}转码成功，开始准备上传");
+
             Uri destUrl = await UploadFileAsync(destFile, ct);
             encItem.Complete(destUrl);
             encItem.ChangeFileMeta(fileSize, srcFileHash);
             logger.LogInterpolatedInformation($"Id={id}转码结果上传成功");
             //发出集成事件和领域事件
+        }
+        catch (Exception ex)
+        {
+            throw ex;
         }
         finally
         {

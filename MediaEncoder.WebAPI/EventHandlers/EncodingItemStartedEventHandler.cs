@@ -1,9 +1,11 @@
 using MediaEncoder.Domain.Events;
+using MediatR;
 using Noodles.EventBus;
 
 namespace MediaEncoder.WebAPI.EventHandlers;
 
-public class EncodingItemStartedEventHandler
+// 千万别掉了 不然无法响应集成事件
+public class EncodingItemStartedEventHandler : INotificationHandler<EncodingItemStartedEvent>
 {
     private readonly IEventBus eventBus;
 

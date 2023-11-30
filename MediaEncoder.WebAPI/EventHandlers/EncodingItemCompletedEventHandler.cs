@@ -1,9 +1,10 @@
 using MediaEncoder.Domain.Events;
+using MediatR;
 using Noodles.EventBus;
 
 namespace MediaEncoder.WebAPI.EventHandlers;
 
-public class EncodingItemCompletedEventHandler
+public class EncodingItemCompletedEventHandler : INotificationHandler<EncodingItemCompletedEvent>
 {
     private readonly IEventBus eventBus;
 
