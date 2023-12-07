@@ -54,7 +54,21 @@ public class LoginController : ControllerBase
         {
             return NotFound();
         }
-        var result = new UserResponse(user.Id, user.PhoneNumber, user.CreationTime,user.UserName);
+
+        List<string> routes = new List<string>
+        {
+            "Listenadmin",
+            "File",
+            "Category",
+            "category",
+            "album",
+            "episode",
+            "Manage",
+            "Product",
+            "Upload"
+        };
+
+        var result = new UserResponse(user.Id, user.PhoneNumber, user.CreationTime,user.UserName, routes);
         //出于安全考虑，不要机密信息传递到客户端
         //除非确认没问题，否则尽量不要直接把实体类对象返回给前端
         return new LoginVM()
