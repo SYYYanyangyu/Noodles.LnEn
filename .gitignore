@@ -580,3 +580,16 @@ MediaEncoder.WebAPI/e:/temp/MediaEncoder.log
 .gitignore
 IdentityService.WebAPI/home/temp/IdentityService.log
 IdentityService.WebAPI/home/temp/IdentityService.log
+IdentityService.WebAPI/home/temp/IdentityService.log
+Listening.Admin.WebAPI/obj/Debug/net7.0/Listening.Admin.WebAPI.sourcelink.json
+Listening.Domain/obj/Debug/net7.0/Listening.Domain.sourcelink.json
+Listening.Infrastructure/obj/Debug/net7.0/Listening.Infrastructure.sourcelink.json
+Listening.Main.WebAPI/e:/temp/Listening.Main.log
+Listening.Main.WebAPI/obj/Debug/net7.0/Listening.Main.WebAPI.sourcelink.json
+Listening.Main.WebAPI/e:/temp/Listening.Main.log
+Listening.Main.WebAPI/e:/temp/Listening.Main.log
+Listening.Main.WebAPI/e:/temp/Listening.Main.log
+MediaEncoder.Domain/obj/Debug/net7.0/MediaEncoder.Domain.sourcelink.json
+MediaEncoder.Infrastructure/obj/Debug/net7.0/MediaEncoder.Infrastructure.sourcelink.json
+MediaEncoder.WebAPI/e:/temp/MediaEncoder.log
+MediaEncoder.WebAPI/obj/Debug/net7.0/MediaEncoder.WebAPI.sourcelink.json
