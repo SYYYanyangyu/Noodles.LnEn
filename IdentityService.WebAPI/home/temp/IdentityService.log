@@ -10366,3 +10366,22 @@ WHERE [t].[IsDeleted] = CAST(0 AS bit) AND [t].[Id] = @__get_Item_0
 2023-12-07 21:24:13.892 +08:00 [INF] Executed action IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI) in 439.0496ms
 2023-12-07 21:24:13.893 +08:00 [INF] Executed endpoint 'IdentityService.WebAPI.Controllers.Login.LoginController.GetUserInfo (IdentityService.WebAPI)'
 2023-12-07 21:24:13.895 +08:00 [INF] Request finished HTTP/1.0 GET http://host.docker.internal:5008/Login/GetUserInfo - - - 200 - application/json;+charset=utf-8 524.2164ms
+2023-12-10 15:14:39.895 +08:00 [INF] User profile is available. Using '/Users/shiyangyang/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-10 15:14:41.223 +08:00 [INF] Now listening on: https://localhost:7294
+2023-12-10 15:14:41.223 +08:00 [INF] Now listening on: http://localhost:5008
+2023-12-10 15:14:41.225 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-10 15:14:41.226 +08:00 [INF] Hosting environment: Development
+2023-12-10 15:14:41.226 +08:00 [INF] Content root path: /Users/shiyangyang/RiderProjects/Noodles.LnEn/IdentityService.WebAPI
+2023-12-10 15:14:42.394 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/index.html - -
+2023-12-10 15:14:42.447 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/index.html - - - 200 - text/html;charset=utf-8 53.5776ms
+2023-12-10 15:14:42.452 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-bundle.js - -
+2023-12-10 15:14:42.453 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui.css - -
+2023-12-10 15:14:42.460 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-12-10 15:14:42.460 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui.css - - - 200 144929 text/css 6.6985ms
+2023-12-10 15:14:42.460 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - -
+2023-12-10 15:14:42.542 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-12-10 15:14:42.542 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 81.7846ms
+2023-12-10 15:14:42.546 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-12-10 15:14:42.547 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 95.0507ms
+2023-12-10 15:14:42.619 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - -
+2023-12-10 15:14:42.656 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7294/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 36.6419ms
