@@ -21,14 +21,32 @@ public class CategoryController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<CategoryVM[]>> FindAll()
     {
-        Task<Category[]> FindData()
+        try
         {
-            return repository.GetCategoriesAsync();
+            Task<Category[]> FindData()
+            {
+                return repository.GetCategoriesAsync();
+            }
+            //用AOP来进行缓存控制看起来更优美（可以用国产的AspectCore或者Castle DynamicProxy），但是这样反而不灵活，因为缓存对于灵活性要求更高，所以用这种直接用ICacheHelper的不优美的方式更实用。
+            var task = cacheHelper.GetOrCreateAsync($"CategoryController.FindAll",
+                async (e) => CategoryVM.Create(await FindData()));
+
+            //// 等待任务完成
+            //var result = await task;
+
+            //// 对结果进行遍历或其他处理
+            //foreach (var categoryVM in result)
+            //{
+            //    // 处理每个 categoryVM
+            //}
+
+            // 返回结果
+            return await task;
         }
-        //用AOP来进行缓存控制看起来更优美（可以用国产的AspectCore或者Castle DynamicProxy），但是这样反而不灵活，因为缓存对于灵活性要求更高，所以用这种直接用ICacheHelper的不优美的方式更实用。
-        var task = cacheHelper.GetOrCreateAsync($"CategoryController.FindAll",
-            async (e) => CategoryVM.Create(await FindData()));
-        return await task;
+        catch (Exception ex)
+        {
+            throw ex;
+        }
     }
 
     [HttpGet]

@@ -55,18 +55,9 @@ public class LoginController : ControllerBase
             return NotFound();
         }
 
-        List<string> routes = new List<string>
-        {
-            "Listenadmin",
-            "File",
-            "Category",
-            "category",
-            "album",
-            "episode",
-            "Manage",
-            "Product",
-            "Upload"
-        };
+        var roles = await repository.GetRolesAsync(user);
+
+        var routes = await repository.GetRouterList(roles);
 
         var result = new UserResponse(user.Id, user.PhoneNumber, user.CreationTime,user.UserName, routes);
         //出于安全考虑，不要机密信息传递到客户端
