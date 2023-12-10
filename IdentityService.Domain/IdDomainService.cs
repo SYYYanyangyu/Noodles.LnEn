@@ -23,14 +23,21 @@ namespace IdentityService.Domain
 
         private async Task<SignInResult> CheckUserNameAndPwdAsync(string userName, string password)
         {
-            var user = await repository.FindByNameAsync(userName);
-            if (user == null)
+            try
             {
-                return SignInResult.Failed;
+                var user = await repository.FindByNameAsync(userName);
+                if (user == null)
+                {
+                    return SignInResult.Failed;
+                }
+                //CheckPasswordSignInAsync会对于多次重复失败进行账号禁用
+                var result = await repository.CheckForSignInAsync(user, password, true);
+                return result;
             }
-            //CheckPasswordSignInAsync会对于多次重复失败进行账号禁用
-            var result = await repository.CheckForSignInAsync(user, password, true);
-            return result;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
         private async Task<SignInResult> CheckPhoneNumAndPwdAsync(string phoneNum, string password)
         {
@@ -61,16 +68,23 @@ namespace IdentityService.Domain
 
         public async Task<(SignInResult Result, string? Token)> LoginByUserNameAndPwdAsync(string userName, string password)
         {
-            var checkResult = await CheckUserNameAndPwdAsync(userName, password);
-            if (checkResult.Succeeded)
+            try
             {
-                var user = await repository.FindByNameAsync(userName);
-                string token = await BuildTokenAsync(user);
-                return (SignInResult.Success, token);
+                var checkResult = await CheckUserNameAndPwdAsync(userName, password);
+                if (checkResult.Succeeded)
+                {
+                    var user = await repository.FindByNameAsync(userName);
+                    string token = await BuildTokenAsync(user);
+                    return (SignInResult.Success, token);
+                }
+                else
+                {
+                    return (checkResult, null);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return (checkResult, null);
+                throw ex;
             }
         }
 
