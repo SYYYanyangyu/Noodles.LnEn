@@ -13,17 +13,23 @@ namespace Listening.Domain.Entities
         public MultilingualString Name { get; private set; }
 
         /// <summary>
+        /// 给前端渲染的路径
+        /// </summary>
+        public string path { get; set; }
+
+        /// <summary>
         /// 封面图片。现在一般都不会直接把图片保存到数据库中（Blob），而是只是保存图片的路径。
         /// </summary>
         public Uri CoverUrl { get; private set; }
 
-        public static Category Create(Guid id, int sequenceNumber, MultilingualString name, Uri coverUrl)
+        public static Category Create(Guid id, int sequenceNumber, MultilingualString name, Uri coverUrl,string path)
         {
             Category category = new();
             category.Id = id;
             category.SequenceNumber = sequenceNumber;
             category.Name = name;
             category.CoverUrl = coverUrl;
+            category.path = path;
             //category.AddDomainEvent(new CategoryCreatedEventArgs { NewObj = category });
             return category;
         }
@@ -50,6 +56,12 @@ namespace Listening.Domain.Entities
         public Category ChangeTime()
         {
             this.LastModificationTime = DateTime.Now;
+            return this;
+        }
+
+        public Category ChangePath(string value)
+        {
+            this.path = value;
             return this;
         }
     }

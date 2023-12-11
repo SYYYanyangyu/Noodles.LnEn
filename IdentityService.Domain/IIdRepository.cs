@@ -11,6 +11,8 @@ namespace IdentityService.Domain
         Task<IdentityResult> CreateAsync(User user, string password);//创建用户
         Task<IdentityResult> AccessFailedAsync(User user);//记录一次登陆失败
 
+        Task<List<string>> GetRouterList(IList<string> roles);
+
         /// <summary>
         /// 生成重置密码的令牌
         /// </summary>

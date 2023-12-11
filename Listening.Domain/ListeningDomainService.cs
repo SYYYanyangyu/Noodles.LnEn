@@ -43,11 +43,11 @@ namespace Listening.Domain
             }
         }
 
-        public async Task<Category> AddCategoryAsync(MultilingualString name, Uri coverUrl)
+        public async Task<Category> AddCategoryAsync(MultilingualString name, Uri coverUrl,string path)
         {
             int maxSeq = await repository.GetMaxSeqOfCategoriesAsync();
             var id = Guid.NewGuid();
-            return Category.Create(id, maxSeq + 1, name, coverUrl);
+            return Category.Create(id, maxSeq + 1, name, coverUrl,path);
         }
 
         public async Task SortCategoriesAsync(Guid[] sortedCategoryIds)
