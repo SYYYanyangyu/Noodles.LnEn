@@ -77,6 +77,7 @@ namespace FileService.WebAPI.Controllers.Uploader
         }
 
         [HttpPost]
+        [RequestSizeLimit(60_000_000)]
         public async Task<IActionResult> UploadImages([FromForm] IFormFile file, CancellationToken cancellationToken = default)
         {
             try

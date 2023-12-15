@@ -47,7 +47,7 @@ public class CategoryController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Guid>> Add(CategoryAddRequest req)
     {
-        var category = await domainService.AddCategoryAsync(req.Name, req.CoverUrl);
+        var category = await domainService.AddCategoryAsync(req.Name, req.CoverUrl,req.path);
         dbContext.Add(category);
         return category.Id;
     }
