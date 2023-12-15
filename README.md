@@ -6,18 +6,19 @@ A web about learning English.
 **Frontend:**
 
 - Frontend Admin:
-  - Vue3 + Vite + TypeScript
+  - Vue3 + Vite + TypeScript 😁 😊 ✅
   - [GitHub Repository](https://github.com/SYYYanyangyu/Noodles.LearnEnFront/tree/master)
 
 - Frontend UI:
-  - React + TypeScript (Not started yet)
+  - React + TypeScript 
+  - (https://github.com/SYYYanyangyu/Noodles.LnEnUI)
 
 **Backend:**
 
 - C#/NET7
 - Identity + Jwt
-- Redis + SQL Server + EF Core
-- RabbitMQ + MediatR + Event Sourcing
+- Redis + SQL Server + EF Core + Elastic Search
+- RabbitMQ + MediatR
 
 ## Project Function and Purpose
 

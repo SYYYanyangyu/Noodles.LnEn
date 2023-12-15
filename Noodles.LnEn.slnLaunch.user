@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "IdentityService.WebAPI\\IdentityService.WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "FileService.WebAPI\\FileService.WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Listening.Admin.WebAPI\\Listening.Admin.WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Listening.Main.WebAPI\\Listening.Main.WebAPI.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "SearchService.WebAPI\\SearchService.WebAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
