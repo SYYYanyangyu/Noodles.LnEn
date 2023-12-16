@@ -18,4 +18,8 @@
       <ProjectReference Include="..\SearchService.Infrastructure\SearchService.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="appsettings.json" />
+    </ItemGroup>
+
 </Project>

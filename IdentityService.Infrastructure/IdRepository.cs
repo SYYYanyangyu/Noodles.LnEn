@@ -34,7 +34,14 @@ class IdRepository : IIdRepository
         {
             var issuper = roles.Contains("Admin");
 
-            return dbCtx.Module.Select(m => m.Name).ToList();
+            if (issuper)
+            {
+                return dbCtx.Module.Select(m => m.Name).ToList();
+            }
+
+
+            return null;
+            
 
         }
         catch (Exception ex)
