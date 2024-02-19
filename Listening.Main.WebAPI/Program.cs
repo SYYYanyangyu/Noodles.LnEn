@@ -1,7 +1,9 @@
 using CommonInitializer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Noodles.Common;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.ConfigureDbConfiguration();
@@ -10,6 +12,9 @@ builder.ConfigureExtraServices(new InitializerOptions
     LogFilePath = "e:/temp/Listening.Main.log",
     EventBusQueueName = "Listening.Main"
 });
+
+builder.Services.AddSingleton(new AppSetting(builder.Configuration));
+
 // Add services to the container.
 //builder.Services.AddScoped<IListeningRepository, ListeningRepository>();
 builder.Services.AddControllers();

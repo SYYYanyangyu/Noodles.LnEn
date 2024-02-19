@@ -4,22 +4,31 @@
     "Projects": [
       {
         "Name": "IdentityService.WebAPI\\IdentityService.WebAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "FileService.WebAPI\\FileService.WebAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "Listening.Admin.WebAPI\\Listening.Admin.WebAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "Listening.Main.WebAPI\\Listening.Main.WebAPI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "SearchService.WebAPI\\SearchService.WebAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "MediaEncoder.WebAPI\\MediaEncoder.WebAPI.csproj",
         "Action": "Start"
       }
     ]

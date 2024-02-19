@@ -31,25 +31,33 @@ public class EpisodeController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Guid>> Add(EpisodeAddRequest req)
     {
-        //如果上传的是m4a，不用转码，直接存到数据库
-        if (req.AudioUrl.ToString().EndsWith("m4a", StringComparison.OrdinalIgnoreCase))
+        try
         {
-            Episode episode = await domainService.AddEpisodeAsync(req.Name, req.AlbumId,
-                req.AudioUrl, req.DurationInSecond, req.SubtitleType, req.Subtitle);
-            dbContext.Add(episode);
-            return episode.Id;
-        }
-        else
-        {
-            //非m4a文件需要先转码，为了避免非法数据污染业务数据，增加业务逻辑麻烦，按照DDD的原则，不完整的Episode不能插入数据库
-            //先临时插入Redis，转码完成再插入数据库
-            Guid episodeId = Guid.NewGuid();
-            EncodingEpisodeInfo encodingEpisode = new EncodingEpisodeInfo(episodeId, req.Name, req.AlbumId, req.DurationInSecond, req.Subtitle, req.SubtitleType, "Created");
-            await encodingEpisodeHelper.AddEncodingEpisodeAsync(episodeId, encodingEpisode);
+            //如果上传的是m4a，不用转码，直接存到数据库
+            if (req.AudioUrl.ToString().EndsWith("m4a", StringComparison.OrdinalIgnoreCase))
+            {
+                Episode episode = await domainService.AddEpisodeAsync(req.Name, req.AlbumId,
+                    req.AudioUrl, req.DurationInSecond, req.SubtitleType, req.Subtitle);
+                dbContext.Add(episode);
+                return episode.Id;
+            }
+            else
+            {
+                //非m4a文件需要先转码，为了避免非法数据污染业务数据，增加业务逻辑麻烦，按照DDD的原则，不完整的Episode不能插入数据库
+                //先临时插入Redis，转码完成再插入数据库
+                Guid episodeId = Guid.NewGuid();
+                EncodingEpisodeInfo encodingEpisode = new EncodingEpisodeInfo(episodeId, req.Name, req.AlbumId, req.DurationInSecond, req.Subtitle, req.SubtitleType, "Created");
+                await encodingEpisodeHelper.AddEncodingEpisodeAsync(episodeId, encodingEpisode);
 
-            //通知转码
-            eventBus.Publish("MediaEncoding.Created", new { MediaId = episodeId, MediaUrl = req.AudioUrl, OutputFormat = "m4a", SourceSystem = "Listening" });//启动转码
-            return episodeId;
+                //通知转码
+                eventBus.Publish("MediaEncoding.Created", new { MediaId = episodeId, MediaUrl = req.AudioUrl, OutputFormat = "m4a", SourceSystem = "Listening" });//启动转码
+
+                return episodeId;
+            }
+        }
+        catch (Exception ex)
+        {
+            throw ex;
         }
     }
 
