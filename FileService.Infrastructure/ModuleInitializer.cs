@@ -13,7 +13,7 @@ namespace FileService.Infrastructure
             // 类似于文件夹，磁盘共享
             services.AddScoped<IStorageClient, SMBStorageClient>();
             // 添加云存储服务
-            //services.AddScoped<IStorageClient, UpYunStorageClient>();
+            services.AddScoped<IStorageClient, UpYunStorageClient>();
             services.AddScoped<IStorageClient, MockCloudStorageClient>();
             services.AddScoped<IFSRepository, FSRepository>();
             services.AddScoped<FSDomainService>();
