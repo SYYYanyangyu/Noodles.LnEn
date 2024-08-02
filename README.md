@@ -15,7 +15,7 @@ A web about learning English.
 
 **Backend:**
 
-- C#/NET7
+- C#/NET8
 - Identity + Jwt
 - Redis + SQL Server + EF Core + Elastic Search
 - RabbitMQ + MediatR
